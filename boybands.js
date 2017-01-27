@@ -22,10 +22,12 @@ var veggieElement = document.getElementById('vegetables');
 for(var loopTracker = 0; loopTracker < loopCount; loopTracker += 1) {
 
   // Add the band names into the correct <div>
-  bandElement.innerHTML += bands[loopTracker] + ' ' + '<br>' ;
+  currentBand = bands[loopTracker] + ' ';
+  bandElement.innerHTML += '<ul>' + '<li>' + currentBand + '</li>' + '</ul>';
 
 
   // Add the veggie names into the correct <div>
-  veggieElement.innerHTML += vegetables[loopTracker] + ' ' + '<br>';
+  currentVeggie = vegetables[loopTracker] + ' ';
+  veggieElement.innerHTML += '<ul>' + '<li>' + currentVeggie + '</li>' + '</ul>';
 
 }
